@@ -2,6 +2,8 @@
 #+title: Estudo de Técnicas de Compressão de Dados em Dispositivos IoT com Recursos Limitados de Armazenamento e Transmissão
 #+date:<2023-09-01 sex>
 
+Projeto baseado em [[https://pt.overleaf.com/latex/templates/modelo-de-tcc-engenharia-da-computacao-up/gcjjykfxnkjc][Modelo de TCC - Engenharia da Computação - UP]]
+
 * Estudo de Técnicas de Compressão de Dados em Dispositivos IoT com Recursos Limitados de Armazenamento e Transmissão
 
 Com o crescente uso de dispositivos IoT (Internet das Coisas) em diversas aplicações, torna-se crucial abordar os desafios associados ao armazenamento e transmissão de dados em dispositivos com recursos limitados. Este trabalho apresenta uma revisão da literatura das técnicas de compressão de dados mais relevantes para dispositivos IoT com restrições de armazenamento e largura de banda. Além disso, são discutidos estudos de caso e resultados obtidos para avaliar a eficácia dessas técnicas em cenários práticos.
@@ -30,4 +32,5 @@ Com o crescente uso de dispositivos IoT (Internet das Coisas) em diversas aplica
 + [[https://github.com/Calebe94][Edimar Calebe Castanho]]
 + [[mailto:contato@calebe.dev.br][contato@calebe.dev.br]]
 
-Projeto baseado em [[https://pt.overleaf.com/latex/templates/modelo-de-tcc-engenharia-da-computacao-up/gcjjykfxnkjc][Modelo de TCC - Engenharia da Computação - UP]]
+* Licença
+All software is covered by [[https://www.gnu.org/licenses/gpl-3.0.en.html][GNU General Public License v3.0]]
