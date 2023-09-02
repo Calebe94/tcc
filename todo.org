@@ -1,0 +1,39 @@
+#+title: Tcc
+#+author: Edimar Calebe Castanho
+#+date:<2023-09-01 sex>
+
+* Estrutura do Trabalho a ser desenvolvido
+
+** TODO Capítulo 1: Introdução (2 a 3 páginas)
++ Justificativa (o porquê do trabalho)
++ Objetivo do Trabalho
++ Metodologia de Estudo
+2 a 3 páginas*
+*a critério do orientador
+
+** TODO Capítulo 2 – Revisão da Literatura
++ Fundamentação Teórica
++ Trabalhos de Referência
+4 a 5 páginas*
+*a critério do orientador
+
+** TODO Capítulo 3 – Estudo de Caso
++ Situação-Problema
++ Etapas:
++ Levantamento da Situação Atual
++ Cálculos Realizados (modelo gerado)
++ Desenhos (se for o caso)
+6 a 7 páginas*
+*a critério do orientador
+
+** TODO Capítulo 4 – Resultados obtidos
++ Resultados Obtidos
++ Discussão – análise do que foi obtido
+2 a 3 páginas*
+*a critério do orientador
+
+** TODO Capítulo 5 – Conclusão
++ Conclusão
++ Propostas de Trabalhos Futuros
+1 a 2 páginas*
+*a critério do orientador
