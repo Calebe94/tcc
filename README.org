@@ -24,10 +24,6 @@ Com o crescente uso de dispositivos IoT (Internet das Coisas) em diversas aplica
 ~$ make~
 
 * Desenvolvedor
-# #+CAPTION: Edimar Calebe Castanho
-# #+NAME:   fig:SED-HR4049
-#+ATTR_HTML: :width 200px
-[[https://github.com/Calebe94.png]]
 
 + [[https://github.com/Calebe94][Edimar Calebe Castanho]]
 + [[mailto:contato@calebe.dev.br][contato@calebe.dev.br]]
