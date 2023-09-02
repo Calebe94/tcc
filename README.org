@@ -1,0 +1,33 @@
+#+author: Edimar Calebe Castanho
+#+title: Estudo de Técnicas de Compressão de Dados em Dispositivos IoT com Recursos Limitados de Armazenamento e Transmissão
+#+date:<2023-09-01 sex>
+
+* Estudo de Técnicas de Compressão de Dados em Dispositivos IoT com Recursos Limitados de Armazenamento e Transmissão
+
+Com o crescente uso de dispositivos IoT (Internet das Coisas) em diversas aplicações, torna-se crucial abordar os desafios associados ao armazenamento e transmissão de dados em dispositivos com recursos limitados. Este trabalho apresenta uma revisão da literatura das técnicas de compressão de dados mais relevantes para dispositivos IoT com restrições de armazenamento e largura de banda. Além disso, são discutidos estudos de caso e resultados obtidos para avaliar a eficácia dessas técnicas em cenários práticos.
+
+* Dependências
+
++ ~texlive~;
++ ~texlive-latex-base~;
++ ~texlive-latex-recommended~;
++ ~texlive-latex-extra~;
++ ~texlive-fonts-extra~;
++ ~texlive-lang-portuguese~;
++ ~texlive-publishers~;
++ ~texlive-bibtex-extra~;
+
+* Compilando o projeto
+
+~$ make~
+
+* Desenvolvedor
+# #+CAPTION: Edimar Calebe Castanho
+# #+NAME:   fig:SED-HR4049
+#+ATTR_HTML: :width 300px
+[[https://github.com/Calebe94.png]]
+
++ [[https://github.com/Calebe94][Edimar Calebe Castanho]]
++ [[mailto:contato@calebe.dev.br][contato@calebe.dev.br]]
+
+Projeto baseado em [[https://pt.overleaf.com/latex/templates/modelo-de-tcc-engenharia-da-computacao-up/gcjjykfxnkjc][Modelo de TCC - Engenharia da Computação - UP]]
