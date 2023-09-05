@@ -1,0 +1,54 @@
+name: LaTeX Spellcheck
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  spellcheck:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Cache Dependencies
+        id: cache-dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ${{ github.workspace }}/textidote-cache
+            ${{ github.workspace }}/deps-cache
+          key: dependencies-${{ runner.os }}
+          restore-keys: |
+            dependencies-${{ runner.os }}
+            dependencies-
+
+      - name: Install Build Essentials and Java
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential openjdk-11-jre-headless
+        working-directory: ${{ github.workspace }}
+
+      - name: Download Textidote
+        run: |
+          if [ ! -f "${{ github.workspace }}/textidote-cache/textidote.jar" ]; then
+            wget https://github.com/sylvainhalle/textidote/releases/latest/download/textidote.jar -O textidote-cache/textidote.jar
+          fi
+        working-directory: ${{ github.workspace }}
+
+      - name: Run Spellcheck
+        run: make spellcheck textidote=textidote-cache/textidote.jar
+        working-directory: ${{ github.workspace }}
+
+      - name: Persist Results
+        run: |
+          mv results.html "${{ github.workspace }}/results.html
+        working-directory: ${{ github.workspace }}
+
+      - name: Upload Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: spellcheck-results
+          path: ${{ github.workspace }}/results.html
