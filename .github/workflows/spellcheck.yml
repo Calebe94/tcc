@@ -43,10 +43,11 @@ jobs:
         run: make spellcheck textidote=textidote-cache/textidote.jar
         working-directory: ${{ github.workspace }}
 
-      - name: Persist Results
-        run: |
-          mv results.html "${{ github.workspace }}/results.html
-        working-directory: ${{ github.workspace }}
+      - name: Persist results
+        uses: actions/upload-artifact@v3
+        with:
+          name: shellcheck-results
+          path: results.html
 
       - name: Upload Results
         uses: actions/upload-artifact@v2
