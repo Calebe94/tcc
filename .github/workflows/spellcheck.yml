@@ -34,7 +34,8 @@ jobs:
       - name: Download Textidote
         run: |
           if [ ! -f "${{ github.workspace }}/textidote-cache/textidote.jar" ]; then
-            wget https://github.com/sylvainhalle/textidote/releases/latest/download/textidote.jar -O textidote-cache/textidote.jar
+            mkdir -p ${{ github.workspace }}/textidote-cache/
+            wget https://github.com/sylvainhalle/textidote/releases/latest/download/textidote.jar -O ${{ github.workspace }}/textidote-cache/textidote.jar
           fi
         working-directory: ${{ github.workspace }}
 
