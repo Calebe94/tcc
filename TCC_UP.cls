@@ -21,8 +21,8 @@
 \RequirePackage{etoolbox}
 \RequirePackage{multibib}
 \RequirePackage[within=none]{newfloat}
-\usepackage[T1]{fontenc}		
-\usepackage{graphicx}			
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
 \usepackage{microtype}
 \usepackage[alf]{abntex2cite}
 \setlength{\parindent}{1.3cm}
@@ -84,7 +84,7 @@
 
 \setfloatadjustment{quadro}{\centering}
 \counterwithout{quadro}{chapter}
-\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand{\cftquadroname}{\quadroname\space}
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
 
 \setfloatlocations{grafico}{hbtp}
@@ -101,7 +101,7 @@
 
 \setfloatadjustment{grafico}{\centering}
 \counterwithout{grafico}{chapter}
-\renewcommand{\cftgraficoname}{\graficoname\space} 
+\renewcommand{\cftgraficoname}{\graficoname\space}
 \renewcommand*{\cftgraficoaftersnum}{\hfill--\hfill}
 
 \setfloatlocations{grafico}{hbtp}
@@ -119,7 +119,7 @@
 %  -----------------------------------------------------------------------
 
 % ------------------ Definições Básicas da Capa --------------------------
-\instituicao{Universidade Positivo} 
+\instituicao{Universidade Positivo}
     \local{Curitiba}
     \data{\the\year}
 
@@ -166,7 +166,7 @@
       \end{minipage}
       \vspace*{\fill}
     }
-    
+
     \vspace*{\fill}
     {\large\MakeUppercase\imprimirlocal}
     \par

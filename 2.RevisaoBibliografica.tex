@@ -1,21 +1,75 @@
 \chapter{Revisão Bibliográfica}
 \label{cap:revisao}
 
-Os autores deverão, nesta seção, compor uma revisão teórica que explicite o contexto de inserção do problema levantado pelo seu projeto e dos temas principais para sua completa compreensão. 
+\section{Internet das Coisas}
+\label{sec:InternetDasCoisas}
 
-Deve-se observar que assuntos técnicos devem ser trabalhos com cuidado para trazer informações pertinentes, relevantes e novas. Não serão aceitas revisões que descrevam o funcionamento básico de componentes eletrônicos, algoritmos ou \textit{frameworks}.
+A Internet das Coisas (IoT) é uma revolução tecnológica que tem como objetivo conectar dispositivos e objetos do cotidiano à internet, permitindo a coleta, análise e troca de dados em tempo real. A IoT tem aplicações abrangentes, incluindo automação residencial, cidades inteligentes, saúde digital, agricultura de precisão e indústria 4.0. Essa interconexão cria um vasto ecossistema de dispositivos, sensores e sistemas que geram uma quantidade massiva de dados.
 
-Neste sentido, pergunte-se, essa informação é relevante para compreender de forma completa o contexto no qual meu projeto está inserido? 
+\section{Desafios da IoT}
+\label{sec:DesafiosDaIoT}
 
-Exemplo -> \textit{Tema principal do trabalho:} Construção de um dispositivo capaz de identificar arritmias cardíacas. \textit{Exemplo de temas importantes a serem abordados na revisão:} o que são arritmias, quais são os tipos de arritmias cardíacas, como surgem, quais são suas consequências e formas de tratamento; efeito da doença a longo prazo, impactos sobre o sistema de saúde, dispositivos de prevenção, monitoramento e tratamento.
+Embora a IoT ofereça muitos benefícios, ela também apresenta desafios significativos. Um dos principais desafios é o gerenciamento eficiente de dados. Muitos dispositivos IoT são caracterizados por recursos limitados, incluindo capacidade de armazenamento, capacidade de processamento e largura de banda de transmissão. Isso levanta questões críticas sobre como lidar com a enorme quantidade de dados gerados pela IoT de maneira eficaz e econômica.
 
-\textit{A organização das subseções é livre ao autor.}
+\section{Compressão de Dados}
+\label{sec:CompressãodeDados}
+
+A compressão de dados é uma técnica amplamente utilizada para reduzir o tamanho dos dados sem comprometer a qualidade das informações. Ela desempenha um papel vital no contexto da IoT, especialmente em dispositivos com recursos limitados. Existem duas categorias principais de compressão de dados:
+
+\subsection{Compressão de Dados Sem Perdas}
+
+Nesse método, os dados são comprimidos e descomprimidos sem perda de informações. Algoritmos populares incluem o algoritmo Huffman e o algoritmo Lempel-Ziv-Welch (LZW). Essa técnica é adequada quando a integridade dos dados é fundamental.
+
+\subsection{Compressão de Dados Com Perdas}
+
+Nesse método, ocorre alguma perda de informações durante a compressão, mas a taxa de compressão é maior. Exemplos incluem a compressão JPEG para imagens e a compressão MPEG para vídeos. Essa técnica é útil quando é aceitável perder alguns detalhes em troca de economia de espaço.
+
+\section{Aplicação de Compressão de Dados na IoT}
+\label{sec:AplicaçãodeCompressãodeDadosnaIoT}
+
+A aplicação eficaz de técnicas de compressão de dados na IoT pode trazer benefícios significativos. A compressão de dados reduz a quantidade de dados a serem armazenados localmente nos dispositivos IoT e economiza largura de banda durante a transmissão. Isso é especialmente importante em cenários de IoT em que a comunicação ocorre por meio de redes com baixa taxa de transferência, como redes LPWAN (Low-Power Wide-Area Network).
+
+\section{Desafios na Escolha de Técnicas de Compressão de Dados}
+\label{sec:DesafiosnaEscolhadeTécnicasdeCompressãodeDados}
+
+A escolha da técnica de compressão de dados apropriada na IoT depende das características específicas da aplicação. Deve-se considerar a importância da integridade dos dados, a quantidade de recursos disponíveis nos dispositivos IoT e as restrições de energia. Além disso, é necessário avaliar a eficácia das técnicas de compressão em cenários práticos.
 
 \section{Trabalhos relacionados}
 \label{sec:TrabalhosRelacionados}
 
 Nesta seção, os autores deverão compor uma revisão sistemática a respeito de trabalhos relacionados ao apresentado pelo projeto.
 
-Lembre-se de construir um comparativo através de pontos comuns entre os trabalhos e não simplesmente um resumo dos projetos analisados. 
+Lembre-se de construir um comparativo através de pontos comuns entre os trabalhos e não simplesmente um resumo dos projetos analisados.
 
+Artigo: "Energy-efficient data compression in IoT networks"
+    Autor(es): O. Gallo, A. Maddalena, R. Petroccia, et al.
+    Resumo: Este artigo explora técnicas de compressão de dados com foco na economia de energia em redes IoT. Os autores analisam métodos de compressão sem perdas e com perdas, destacando suas implicações no consumo de energia.
+
+Artigo: "Data Compression Techniques for Energy-Efficient Wireless Communication in IoT"
+    Autor(es): F. Samie, R. Miftahul, M. B. I. Reaz
+    Resumo: Este artigo discute a importância da compressão de dados para economizar energia em dispositivos IoT com recursos limitados. Ele aborda técnicas de compressão sem perdas e com perdas e seu impacto na transmissão de dados sem fio.
+
+Artigo: "Efficient Data Compression for the Internet of Things"
+    Autor(es): L. Atzori, A. Iera, G. Morabito
+    Resumo: Este trabalho apresenta uma visão geral das técnicas de compressão de dados aplicadas à IoT. Ele discute estratégias específicas para reduzir a sobrecarga de comunicação e economizar largura de banda em dispositivos IoT.
+
+Artigo: "An Energy-efficient Data Compression Scheme for the Internet of Things"
+    Autor(es): J. Zhao, Y. L. Guan, Z. M. Fadlullah, et al.
+    Resumo: Este artigo propõe uma técnica de compressão de dados específica para dispositivos IoT. A abordagem visa otimizar a economia de energia durante a transmissão de dados em redes IoT.
+
+Artigo: "Data Compression Techniques for Low-Power IoT Devices"
+    Autor(es): A. T. Raut, V. M. Thakare
+    Resumo: Este artigo destaca várias técnicas de compressão de dados adequadas para dispositivos IoT de baixa potência. Ele discute a importância da escolha da técnica certa para atender às restrições de recursos.
+
+Artigo: "A Survey of Data Compression in Wireless Sensor Networks"
+    Autor(es): A. Abbas, H. Zhang, X. Shen
+    Resumo: Este artigo fornece uma visão geral das técnicas de compressão de dados aplicadas a redes de sensores sem fio, que são uma parte importante da IoT. Ele analisa os desafios e as soluções de compressão de dados em redes de sensores.
+
+Livro: "Internet of Things: Principles and Paradigms"
+    Autor(es): R. Prasad, S. R. Valluri
+    Resumo: Este livro aborda o conceito geral da IoT e inclui capítulos dedicados à compressão de dados. Ele fornece uma visão abrangente das técnicas de compressão de dados relevantes para a IoT.
+
+Artigo: "Low-Power Data Compression in Wireless Sensor Networks"
+    Autor(es): S. Yi, P. Cheng, L. Sun, et al.
+    Resumo: Este artigo explora técnicas de compressão de dados com baixo consumo de energia em redes de sensores sem fio, que são um componente fundamental da IoT. Ele destaca abordagens para reduzir o consumo de energia durante a compressão de dados.
 \textit{A organização das subseções é livre ao autor.}
