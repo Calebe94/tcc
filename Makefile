@@ -8,6 +8,8 @@ textidote = "textidote.jar"
 
 pdf:
 	pdflatex main.tex
+	bibtex main
+	pdflatex main.tex
 
 all: pdf
 
