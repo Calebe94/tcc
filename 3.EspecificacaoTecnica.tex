@@ -1,95 +1,93 @@
 \chapter{Especificação Técnica}
-\label{cap:especificacao}
 
 \section{Análise de Contexto}
-\label{sec:analiseContexto}
 
 \subsection{Visão Geral}
 
-Este item deverá versar \underline{obrigatoriamente} sobre o Funcionamento do Sistema e o Interfaceamento entre as partes. Descreva a visão sobre “o que” seu dispositivo ou \textit{software} fará. A organização em subseções é livre ao autor.
-
-Para descrever claramente a visão geral é útil a utilização de diagramas em blocos, inclusive para apresentar o interfaceamento entre as partes. 
+O sistema é uma ferramenta de compressão e descompressão de dados, utilizando os algoritmos Huffman, Deflate, RLE e LZW. A estrutura do projeto é organizada em diferentes diretórios: \texttt{src} contém o código-fonte principal, \texttt{lib} abriga bibliotecas de terceiros e implementações adicionais, enquanto \texttt{bin} é o diretório de saída para arquivos objeto e o executável final.
 
 \subsection{Condições Restritivas}
 
-Este item deverá versar \underline{obrigatoriamente}, de acordo com a aplicação no trabalho, sobre as seguintes condições restritivas
-
 \subsubsection{Custos}
 
-Versar sobre a existência de alguma restrição de custo. O protótipo será de baixo custo? Existe um limite de orçamento? Em uma visão de futuro, seu produto deve seguir alguma restrição de custo de operação ou de aquisição?
+Não há restrições específicas de custo para o desenvolvimento do protótipo. Porém, visando a aplicação em dispositivos com recursos limitados, será considerada a eficiência de uso de recursos computacionais.
 
 \subsubsection{Físicas e Ambientais}
 
-Existe alguma restrição de funcionamento do protótipo considerando interferências físicas ou ambientais? Sua composição deve atender requisitos mínimos exigidos por alguma característica física ou ambiental de sua aplicação?
+Não há restrições físicas ou ambientais impostas ao funcionamento do protótipo. A aplicação não requer características específicas em termos de ambiente operacional.
 
 \subsubsection{Tecnológicas}
 
-O acesso à tecnologia, ou dificuldade de acesso, pode restringir sua utilização no projeto? Existem aspectos de projeto que exigem ou impeçam a utilização de alguma tecnologia específica?
+O acesso à tecnologia não é restrito, porém, a aplicação foi desenvolvida considerando dispositivos com recursos limitados.
 
 \subsubsection{Energização}
-Existe alguma condição de energização do protótipo que restringe o uso de alguma tecnologia? 
+
+Não há requisitos especiais de energia para o funcionamento do software.
 
 \subsubsection{Interferências devido ao meio}
 
-Existe alguma interferência devido ao meio que trará alguma restrição ao funcionamento do protótipo?
+Não foram identificadas interferências externas que restrinjam o funcionamento do protótipo.
 
 \subsection{Benefícios e Impactos}
 
-Este item deverá versar \underline{obrigatoriamente}, de acordo com a aplicação no trabalho, sobre os seguintes benefícios e impactos
-
 \subsubsection{Econômicos}
 
-A implantação gerará custos ou lucros? Seu protótipo gerará economia de insumos ou outros benefícios?
+A implementação do protótipo visa otimizar o uso de recursos de armazenamento e transmissão de dados, potencialmente resultando em economia de recursos de hardware e largura de banda.
 
 \subsubsection{Operacionais}
 
-Quais serão os prós e contras da operacionalização do projeto? Será necessário mudar a rotina do ambiente em que seu protótipo será aplicado? As mudanças impactarão positiva ou negativamente?
+O protótipo foi desenvolvido para facilitar a compressão e descompressão de dados, não impactando significativamente a rotina operacional do ambiente.
 
 \subsubsection{Estratégicos}
 
-A implantação do seu protótipo exigirá estratégias de curto ou longo prazo? A implantação do seu protótipo faz parte da estratégia de solução do problema e está relacionada a alguma outra ação? 
+A utilização do protótipo está alinhada com estratégias de otimização de recursos em dispositivos com capacidades limitadas.
 
 \subsubsection{Políticos}
 
-Será necessário compor novas políticas públicas para implantação do seu protótipo? Seu protótipo poderá promover mudanças de aspecto legal em algum setor?
+Não há impactos políticos previstos com a implementação do protótipo.
 
 \subsubsection{Sociais}
-Quais serão os benefícios ou impactos sentidos pela população ou meio-ambiente a partir da implementação do seu protótipo?
+
+A aplicação pode contribuir positivamente ao permitir o uso eficiente de recursos em dispositivos IoT, beneficiando a comunidade de desenvolvimento de IoT e usuários finais.
 
 \section{Análise Funcional e de Requisitos Tecnológicos}
-\label{sec:analisefuncional}
 
-A análise funcional descreve aspectos relacionados ao funcionamento do sistema. A análise de requisitos tecnológicos nomeia as tecnologias que serão utilizadas para a construção do protótipo. Aqui também podem ser utilizadas diagramas em blocos para ilustrar a descrição (que deve ser completa).
+\subsection{Lista de Funcionalidades e Atores}
 
-\subsection{Lista de Funcionalidade e Atores}
-
-Descrever em uma lista de funcionalidades que permita compreender como o sistema funcionará. Os atores do sistema deverão ser listados aqui também. Atores são todos aqueles que interagem com o sistema e que não fazem parte dele.
+\begin{itemize}
+    \item Funcionalidades:
+        \begin{itemize}
+            \item Compressão e descompressão de dados.
+            \item Suporte aos algoritmos Huffman, Deflate, RLE e LZW.
+        \end{itemize}
+    \item Atores:
+        \begin{itemize}
+            \item Usuários finais.
+        \end{itemize}
+\end{itemize}
 
 \subsection{Comunicação}
-Como funciona toda a comunicação interna e externa do protótipo? Quais serão as tecnologias utilizadas para tal?
+
+A comunicação interna do protótipo é direcionada à execução dos algoritmos de compressão e descompressão, enquanto a comunicação externa é realizada através da interface de linha de comando.
 
 \subsection{Processamento}
 
-Como será feito o processamento do protótipo? Quais serão as tecnologias utilizadas para tal? Descreva os requisitos mínimos necessários (HW e SW) para processamento das informações e ações.
+O processamento é realizado por meio de algoritmos de compressão implementados em C. Os requisitos mínimos de hardware incluem um processador básico capaz de executar operações de compressão e descompressão de dados.
 
 \subsection{Interface Homem-Máquina}
 
-Como será a interface do protótipo com o usuário? São utilizadas telas? Aqui devem ser mostrados protótipos das telas também.
+O protótipo possui uma interface de linha de comando, permitindo a interação com o usuário para seleção e execução dos algoritmos de compressão e descompressão.
 
 \subsection{Sistemas Controlados Automaticamente}
 
-O protótipo poderá processar e executar ações automaticamente? Como será feito esse processo? Existe alguma decisão que o sistema tomará sozinho?
-
-\subsection{Aquisição de dados e Atuação}
-
-Como e quando será feita alguma aquisição de dados? Qual será a forma de atuação do sistema em cada caso?
+O protótipo não executa automaticamente, requerendo a entrada do usuário para a seleção e execução das operações de compressão e descompressão.
 
 \section{Análise da Arquitetura do Sistema}
 
 \subsection{Hardware}
 
-Este item deverá versar sobre o funcionamento do dispositivo de \textit{hardware} e suas circuitarias. \underline{obrigatoriamente} os autores devem incorporar ao texto Diagramas de Blocos para a descrição do funcionamento do \textit{hardware} e a interconexão de dispositivos, bem como Diagramas de Fluxo para a descrição lógica do \textit{firmware}.
+O software não tem dependência de hardware específico, sendo executável em dispositivos comuns.
 
 \subsection{Software}
 
-Este item deverá versar sobre o funcionamento do \textit{software} e suas dependências. obrigatoriamente os autores deverão incorporar ao texto, por meio de seções específicas, Modelo Entidade Relacionamento (MER), Diagrama Entidade Relacionamento (DER), Use Cases, Diagramas de Sequência e Diagramas de Classe.
+O funcionamento do software depende do sistema operacional que suporta a linguagem C, juntamente com as bibliotecas específicas utilizadas para os algoritmos de compressão.
