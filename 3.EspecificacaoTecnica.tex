@@ -1,4 +1,5 @@
 \chapter{Especificação Técnica}
+\label{cap:especificacao}
 
 \section{Análise de Contexto}
 
@@ -49,45 +50,3 @@ Não há impactos políticos previstos com a implementação do protótipo.
 \subsubsection{Sociais}
 
 A aplicação pode contribuir positivamente ao permitir o uso eficiente de recursos em dispositivos IoT, beneficiando a comunidade de desenvolvimento de IoT e usuários finais.
-
-\section{Análise Funcional e de Requisitos Tecnológicos}
-
-\subsection{Lista de Funcionalidades e Atores}
-
-\begin{itemize}
-    \item Funcionalidades:
-        \begin{itemize}
-            \item Compressão e descompressão de dados.
-            \item Suporte aos algoritmos Huffman, Deflate, RLE e LZW.
-        \end{itemize}
-    \item Atores:
-        \begin{itemize}
-            \item Usuários finais.
-        \end{itemize}
-\end{itemize}
-
-\subsection{Comunicação}
-
-A comunicação interna do protótipo é direcionada à execução dos algoritmos de compressão e descompressão, enquanto a comunicação externa é realizada através da interface de linha de comando.
-
-\subsection{Processamento}
-
-O processamento é realizado por meio de algoritmos de compressão implementados em C. Os requisitos mínimos de hardware incluem um processador básico capaz de executar operações de compressão e descompressão de dados.
-
-\subsection{Interface Homem-Máquina}
-
-O protótipo possui uma interface de linha de comando, permitindo a interação com o usuário para seleção e execução dos algoritmos de compressão e descompressão.
-
-\subsection{Sistemas Controlados Automaticamente}
-
-O protótipo não executa automaticamente, requerendo a entrada do usuário para a seleção e execução das operações de compressão e descompressão.
-
-\section{Análise da Arquitetura do Sistema}
-
-\subsection{Hardware}
-
-O software não tem dependência de hardware específico, sendo executável em dispositivos comuns.
-
-\subsection{Software}
-
-O funcionamento do software depende do sistema operacional que suporta a linguagem C, juntamente com as bibliotecas específicas utilizadas para os algoritmos de compressão.
