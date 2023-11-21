@@ -1,6 +1,56 @@
-\chapter{Testes e Resultados}
-\label{cap:testesResultados}
+\chapter{Teste e Resultados}
+\label{cap:teste-resultados}
 
-Neste capítulo os autores deverão descrever \underline{obrigatoriamente} a metodologia adotada para os testes de validação, apresentar o conjunto de dados de entrada e saída (conjuntos de dados muito extensos deverão ser dispostos em Apêndice), resultados imediatos e breve discussão acerca dos resultados obtidos.
-	
-Espera-se que os autores executem diversos testes de validação, deste modo, para organização do capítulo pode-se adotar seções que descrevam cada um dos testes realizados.
+Neste capítulo, descrevemos os testes de validação realizados para a ferramenta de compressão de dados utilizando diferentes algoritmos. Estes testes foram conduzidos em dois diferentes ambientes: um processador ARMv6 com 256MB de memória RAM e um processador x86 (Ryzen 6) com 32GB de RAM. Os resultados obtidos são apresentados a seguir:
+
+\section{Testes no Processador ARMv6}
+
+Os testes realizados no processador ARMv6 apresentaram os seguintes resultados:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Algoritmo & Operação & Tempo (s) & Tamanho do arquivo (kB) \\
+\hline
+Huffman & Compressão & 0.669 & 176 \\
+Huffman & Descompressão & 0.098 & 688 \\
+Deflate & Compressão & 0.699 & 176 \\
+Deflate & Descompressão & 0.085 & 688 \\
+RLE & Compressão & 0.806 & 1232 \\
+RLE & Descompressão & 0.086 & 680 \\
+LZW & Compressão & 40.834 & 228 \\
+LZW & Descompressão & 0.146 & 688 \\
+\hline
+\end{tabular}
+\end{center}
+
+Os resultados obtidos no processador ARMv6 indicam tempos de processamento mais prolongados em comparação com o ambiente x86, especialmente para o algoritmo LZW.
+
+\section{Testes no Processador x86}
+
+Já os testes no processador x86, com um ambiente mais robusto em termos de hardware, apresentaram os seguintes resultados:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Algoritmo & Operação & Tempo (s) & Tamanho do arquivo (kB) \\
+\hline
+Huffman & Compressão & 0.161 & 176 \\
+Huffman & Descompressão & 0.008 & 688 \\
+Deflate & Compressão & 0.161 & 176 \\
+Deflate & Descompressão & 0.008 & 688 \\
+RLE & Compressão & 0.024 & 1232 \\
+RLE & Descompressão & 0.005 & 680 \\
+LZW & Compressão & 3.515 & 228 \\
+LZW & Descompressão & 0.011 & 688 \\
+\hline
+\end{tabular}
+\end{center}
+
+No ambiente x86, os tempos de processamento foram significativamente menores em comparação com o ARMv6, indicando uma melhoria considerável de desempenho, especialmente para o algoritmo LZW.
+
+\section{Discussão dos Resultados}
+
+Os resultados dos testes demonstram claramente a influência do hardware no desempenho da ferramenta de compressão de dados. Ambos os ambientes apresentaram variações significativas nos tempos de compressão e descompressão, destacando a importância do hardware na eficiência dos algoritmos utilizados.
+
+Além disso, os dados obtidos fornecem informações valiosas sobre os tempos de execução dos diferentes algoritmos em diferentes ambientes, contribuindo para a compreensão do desempenho da ferramenta em contextos variados.

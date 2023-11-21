@@ -1,4 +1,26 @@
 \chapter{Desenvolvimento}
 \label{cap:desenvolvimento}
 
-Neste capítulo os autores deverão compor uma descrição a respeito do processo de desenvolvimento do protótipo, abordando nuances de projeto e como o desenvolvimento atendeu à requisitos descritos no capítulo anterior. A organização em subseções é livre aos autores.
+O desenvolvimento da Ferramenta de Compressão de Dados foi um processo estruturado que seguiu etapas específicas para garantir a implementação eficiente dos algoritmos de compressão e descompressão.
+
+\section{Planejamento e Estruturação do Projeto}
+
+A estrutura do projeto foi delineada considerando a modularidade e a organização dos códigos-fonte. A divisão em diretórios específicos (\texttt{src}, \texttt{lib}, \texttt{bin}) permitiu uma clara separação entre o código principal, bibliotecas de terceiros e o diretório de saída para os arquivos objeto e o executável final. Isso facilitou a manutenção e compreensão do projeto.
+
+\section{Implementação dos Algoritmos de Compressão e Descompressão}
+
+Os algoritmos escolhidos (Huffman, Deflate, RLE e LZW) foram implementados de acordo com as especificações, garantindo sua correta funcionalidade. Cada algoritmo teve sua implementação dedicada (\texttt{huffman.c}, \texttt{deflate.c}, \texttt{rle\_routine.c}, \texttt{lzw\_compress.c}), o que permitiu a modularidade e manutenção separada de cada método.
+
+\section{Utilização de Ferramentas de Compilação}
+
+Para facilitar o processo de compilação e geração do executável final, foi utilizado um \texttt{Makefile}. Esse arquivo configurou os parâmetros de compilação e vinculação dos diferentes arquivos-fonte presentes nos diretórios \texttt{src} e \texttt{lib}, agilizando o processo de geração do executável final no diretório \texttt{bin}.
+
+\section{Validação e Testes}
+
+Durante o desenvolvimento, foram realizados testes extensivos para garantir o correto funcionamento dos algoritmos de compressão e descompressão. Esses testes foram conduzidos utilizando diferentes tipos de arquivos e dados, verificando a integridade e a eficiência dos algoritmos implementados.
+
+\section{Documentação e Limpeza}
+
+Além da implementação, a ferramenta foi documentada adequadamente no arquivo README.md, fornecendo instruções claras sobre a compilação, uso da ferramenta e limpeza de arquivos gerados durante o processo.
+
+O processo de desenvolvimento foi centrado na eficiência, modularidade e facilidade de uso da Ferramenta de Compressão de Dados, garantindo a correta aplicação dos algoritmos e a entrega de uma solução funcional e bem documentada para compressão e descompressão de dados.
