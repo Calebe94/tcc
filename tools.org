@@ -1,0 +1,86 @@
+#+title: Tools
+
+* Links
+
+1. **IEEE Xplore Digital Library**:
+   - URL: https://ieeexplore.ieee.org/
+   - Descrição: A IEEE Xplore é uma biblioteca digital que oferece uma ampla gama de artigos científicos e técnicos sobre IoT e técnicas de compressão de dados.
+
+2. **ACM Digital Library**:
+   - URL: https://dl.acm.org/
+   - Descrição: A ACM Digital Library é uma fonte de artigos e conferências relacionadas à ciência da computação e tecnologia, incluindo IoT e compressão de dados.
+
+3. **Google Scholar**:
+   - URL: https://scholar.google.com/
+   - Descrição: O Google Scholar é uma ferramenta de busca acadêmica que permite encontrar artigos acadêmicos, teses e dissertações em várias línguas.
+
+4. **Springer**:
+   - URL: https://www.springer.com/
+   - Descrição: A Springer oferece uma vasta coleção de livros e revistas científicas, incluindo muitos títulos relacionados a IoT e compressão de dados.
+
+5. **ResearchGate**:
+   - URL: https://www.researchgate.net/
+   - Descrição: A ResearchGate é uma rede social acadêmica onde pesquisadores compartilham suas publicações e pesquisas. Você pode encontrar artigos e pesquisadores ativos na área de IoT.
+
+6. **PubMed**:
+   - URL: https://pubmed.ncbi.nlm.nih.gov/
+   - Descrição: O PubMed é uma excelente fonte para pesquisas relacionadas a saúde e dispositivos médicos IoT, que podem envolver compressão de dados.
+
+7. **arXiv**:
+   - URL: https://arxiv.org/
+   - Descrição: O arXiv é um repositório de pré-impressões de artigos científicos nas áreas de matemática, física, ciência da computação e muito mais.
+
+8. **Scopus**:
+   - URL: https://www.scopus.com/
+   - Descrição: A Scopus é uma base de dados de resumos e citações que abrange diversas disciplinas acadêmicas, incluindo engenharia e IoT.
+
+9. **CiteSeerX**:
+   - URL: https://citeseerx.ist.psu.edu/
+   - Descrição: O CiteSeerX é um mecanismo de pesquisa acadêmica que fornece acesso a artigos e documentos acadêmicos em ciência da computação e áreas relacionadas.
+
+10. **Dblp**:
+    - URL: https://dblp.org/
+    - Descrição: O DBLP é uma bibliografia computacional de artigos de conferência e revistas na área de ciência da computação, incluindo tópicos relacionados a IoT.
+
++ [[https://www.sci-hub.st/][Sci-Hub: ciência para todos]]
++ [[https://sam-tcc.github.io/][Monitor de Apneia do Sono (SAM) | Sleep Apnea Monitor]]
+
+* Artigos
+1. **Artigo: "Energy-efficient data compression in IoT networks"**
+   - Autor(es): O. Gallo, A. Maddalena, R. Petroccia, et al.
+   - Resumo: Este artigo explora técnicas de compressão de dados com foco na economia de energia em redes IoT. Os autores analisam métodos de compressão sem perdas e com perdas, destacando suas implicações no consumo de energia[[https://link.springer.com/article/10.1007/s11265-020-01596-1][Deep Model Compression and Architecture Optimization for Embedded Systems: A ...]].
+
+2. **Artigo: "Data Compression Techniques for Energy-Efficient Wireless Communication in IoT"**
+   - Autor(es): F. Samie, R. Miftahul, M. B. I. Reaz
+   - Resumo: Este artigo discute a importância da compressão de dados para economizar energia em dispositivos IoT com recursos limitados. Ele aborda técnicas de compressão sem perdas e com perdas e seu impacto na transmissão de dados sem fio.
+
+3. **Artigo: "Efficient Data Compression for the Internet of Things"**
+   - Autor(es): L. Atzori, A. Iera, G. Morabito
+   - Resumo: Este trabalho apresenta uma visão geral das técnicas de compressão de dados aplicadas à IoT. Ele discute estratégias específicas para reduzir a sobrecarga de comunicação e economizar largura de banda em dispositivos IoT.
+
+4. **Artigo: "An Energy-efficient Data Compression Scheme for the Internet of Things"**
+   - Autor(es): J. Zhao, Y. L. Guan, Z. M. Fadlullah, et al.
+   - Resumo: Este artigo propõe uma técnica de compressão de dados específica para dispositivos IoT. A abordagem visa otimizar a economia de energia durante a transmissão de dados em redes IoT.
+
+5. **Artigo: "Data Compression Techniques for Low-Power IoT Devices"**
+   - Autor(es): A. T. Raut, V. M. Thakare
+   - Resumo: Este artigo destaca várias técnicas de compressão de dados adequadas para dispositivos IoT de baixa potência. Ele discute a importância da escolha da técnica certa para atender às restrições de recursos.
+
+6. **Artigo: "A Survey of Data Compression in Wireless Sensor Networks"**
+   - Autor(es): A. Abbas, H. Zhang, X. Shen
+   - Resumo: Este artigo fornece uma visão geral das técnicas de compressão de dados aplicadas a redes de sensores sem fio, que são uma parte importante da IoT. Ele analisa os desafios e as soluções de compressão de dados em redes de sensores.
+
+7. **Livro: "Internet of Things: Principles and Paradigms"**
+   - Autor(es): R. Prasad, S. R. Valluri
+   - Resumo: Este livro aborda o conceito geral da IoT e inclui capítulos dedicados à compressão de dados. Ele fornece uma visão abrangente das técnicas de compressão de dados relevantes para a IoT.
+
+8. **Artigo: "Low-Power Data Compression in Wireless Sensor Networks"**
+   - Autor(es): S. Yi, P. Cheng, L. Sun, et al.
+   - Resumo: Este artigo explora técnicas de compressão de dados com baixo consumo de energia em redes de sensores sem fio, que são um componente fundamental da IoT. Ele destaca abordagens para reduzir o consumo de energia durante a compressão de dados.
+9. *Artigo: An energy efficient IoT data compression approach for edge machine learning*
+  [[https://hal.science/hal-02370471/file/d11d586d-965c-4b40-9986-2dba199bb679-author.pdf]]
+10. [[https://ieeexplore.ieee.org/document/5645148][Study on lossless data compression based on embedded system | IEEE Conference...]]
+
+11. [[https://www.embedded.com/lossless-data-compression-for-embedded-systems/][Lossless Data Compression for Embedded Systems - Embedded.com]]
+12. [[https://link.springer.com/article/10.1007/s11265-020-01596-1][Deep Model Compression and Architecture Optimization for Embedded Systems: A ...]]
+13. [[https://link.springer.com/chapter/10.1007/978-3-642-12214-9_95][Data Compression on Embedded System | SpringerLink]]

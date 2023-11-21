@@ -1,0 +1,29 @@
+#+title: Desenvolvimento
+
+Claro, vou descrever um possível desenvolvimento para a aplicação, considerando o uso das linguagens de programação e bibliotecas mencionadas:
+Desenvolvimento da Aplicação:
+
+    Linguagem de Programação C:
+        Utilizada como base para o desenvolvimento da aplicação de compressão e descompressão de dados.
+
+    Bibliotecas Utilizadas:
+        lzw-eddy: Biblioteca para implementação do algoritmo LZW. Oferece funcionalidades para compressão e descompressão utilizando o algoritmo LZW.
+        zlib: Biblioteca para implementação do algoritmo Deflate (utilizado na compressão ZIP). Oferece funcionalidades para compressão e descompressão utilizando o algoritmo Deflate.
+
+    Estrutura da Aplicação:
+        Criada como uma aplicação de linha de comando para oferecer funcionalidades de compressão e descompressão.
+        Recebe argumentos da linha de comando para o arquivo de entrada, a ação a ser executada (compressão ou descompressão) e a seleção do algoritmo desejado (Huffman, LZW, RLE ou Deflate).
+
+    Fluxo de Funcionamento:
+        Ao receber os parâmetros, a aplicação lê o arquivo .csv de entrada.
+        Dependendo da ação escolhida, aplica o algoritmo de compressão correspondente, utilizando as funções fornecidas pelas bibliotecas (lzw-eddy, zlib).
+        Em seguida, gera um arquivo de saída com os dados comprimidos ou descomprimidos, conforme especificado.
+
+    Testes e Execução:
+        Realização de testes para garantir a correta implementação dos algoritmos de compressão e descompressão.
+        Execução da aplicação nos processadores x86 da AMD e ARMv6 da Broadcom para avaliar o desempenho e a eficácia dos algoritmos em diferentes arquiteturas.
+
+    Captura de Resultados:
+        Registros dos resultados obtidos durante a execução, incluindo o tempo de processamento, o tamanho dos arquivos de saída e quaisquer outras métricas relevantes para cada algoritmo em ambas as arquiteturas.
+
+Esse é um possível cenário de desenvolvimento para a aplicação que você mencionou. O uso das bibliotecas lzw-eddy e zlib em linguagem C proporciona a implementação dos algoritmos de compressão de dados necessários para sua aplicação, permitindo a realização de testes e análises de desempenho nos diferentes processadores.

@@ -1,0 +1,21 @@
+#+title: Introdução
+
+O Problema:
+
+A crescente integração de dispositivos IoT em várias aplicações resulta em uma enorme geração de dados. Dispositivos IoT, devido às suas limitações de armazenamento, processamento e energia, enfrentam desafios na gestão eficiente desses dados. O problema central reside na necessidade de comprimir esses dados de forma eficaz e preservar sua integridade, mesmo com as limitações impostas pelos recursos desses dispositivos.
+Justificativa:
+
+A compressão de dados em dispositivos IoT com recursos limitados é crucial para otimizar a utilização de armazenamento e largura de banda, minimizando o consumo de energia e permitindo a transmissão eficiente de informações em redes com restrições. A pesquisa e implementação de técnicas de compressão adaptadas a esses dispositivos são fundamentais para viabilizar e aprimorar o desempenho de aplicações IoT em diversos domínios, como monitoramento ambiental, saúde, segurança e muitos outros.
+Objetivos Gerais:
+
+    Estudar e avaliar a eficácia de quatro algoritmos de compressão (Huffman Coding, LZW, RLE e Deflate) em dispositivos IoT com recursos limitados.
+    Analisar como esses algoritmos se comportam diante das restrições de processamento, memória e energia desses dispositivos.
+    Demonstrar a importância da compressão de dados na preservação de recursos e eficiência das aplicações IoT.
+
+Objetivos Específicos:
+
+    Implementar uma aplicação que possibilite a compressão e descompressão de dados utilizando os quatro algoritmos escolhidos.
+    Utilizar dados reais do Instituto Nacional de Meteorologia (INMET) para demonstrar a eficácia dos algoritmos em reduzir o tamanho dos dados da cidade de Curitiba-PR do ano de 2022.
+    Comparar o desempenho dos algoritmos em diferentes arquiteturas de processadores (x86 e ARMv6), destacando como essas variações afetam o processo de compressão e descompressão em dispositivos IoT.
+
+Esses objetivos visam contribuir para a compreensão da eficácia e limitações dos algoritmos de compressão em dispositivos IoT com recursos limitados, demonstrando sua aplicabilidade em cenários do mundo real e suas adaptações conforme a arquitetura do processador.
