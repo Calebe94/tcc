@@ -1,52 +1,24 @@
-\chapter{Especificação Técnica}
-\label{cap:especificacao}
+\chapter{Estudo de Caso}
+\label{cap:estudo}
 
-\section{Análise de Contexto}
+\section{O Projeto}
+A criação de uma ferramenta de compressão de dados em linguagem C foi um processo desafiador e empolgante. Inicialmente, o foco foi entender a lógica e os fundamentos por trás dos algoritmos de compressão mais comuns, como Huffman, Deflate, RLE e LZW.
 
-\subsection{Visão Geral}
+O desenvolvimento teve início com a compreensão aprofundada de cada algoritmo, suas vantagens, desvantagens e as situações ideais para sua aplicação. Isso incluiu uma exploração detalhada das estruturas de dados e dos métodos de manipulação de informações, fundamentais para a eficiência de compressão.
 
-O sistema é uma ferramenta de compressão e descompressão de dados, utilizando os algoritmos Huffman, Deflate, RLE e LZW. A estrutura do projeto é organizada em diferentes diretórios: \texttt{src} contém o código-fonte principal, \texttt{lib} abriga bibliotecas de terceiros e implementações adicionais, enquanto \texttt{bin} é o diretório de saída para arquivos objeto e o executável final.
+\section{Implementação}
+A implementação dos algoritmos foi um passo crucial. Cada um deles exigiu um entendimento profundo de suas especificidades e da lógica subjacente. Isso envolveu a tradução desses conceitos em código C, garantindo ao mesmo tempo eficiência e robustez.
 
-\subsection{Condições Restritivas}
+Durante o desenvolvimento, a modularidade e a eficiência do código foram priorizadas. Isso implicou na criação de funções bem definidas para cada parte do processo de compressão e descompressão, mantendo um código limpo e de fácil compreensão.
 
-\subsubsection{Custos}
+\section{Compilação e Execução}
+Após a implementação, foi essencial realizar testes abrangentes para validar a funcionalidade dos algoritmos. O processo de compilação e execução foi feito em diferentes plataformas para garantir a portabilidade e o correto funcionamento da ferramenta em ambientes diversos.
 
-Não há restrições específicas de custo para o desenvolvimento do protótipo. Porém, visando a aplicação em dispositivos com recursos limitados, será considerada a eficiência de uso de recursos computacionais.
+A execução dos testes de compressão e descompressão em diferentes tipos de dados foi crucial para verificar a eficácia e a robustez dos algoritmos implementados.
 
-\subsubsection{Físicas e Ambientais}
+Além disso, a ferramenta foi submetida a testes de desempenho e otimização. O objetivo foi melhorar a eficiência dos algoritmos e garantir um desempenho ideal em situações diversas.
 
-Não há restrições físicas ou ambientais impostas ao funcionamento do protótipo. A aplicação não requer características específicas em termos de ambiente operacional.
+\section{Considerações Finais}
+O desenvolvimento dessa ferramenta proporcionou uma experiência enriquecedora. Foi um processo que exigiu não apenas conhecimento técnico, mas também habilidades de otimização, resolução de problemas e compreensão aprofundada dos algoritmos de compressão de dados.
 
-\subsubsection{Tecnológicas}
-
-O acesso à tecnologia não é restrito, porém, a aplicação foi desenvolvida considerando dispositivos com recursos limitados.
-
-\subsubsection{Energização}
-
-Não há requisitos especiais de energia para o funcionamento do software.
-
-\subsubsection{Interferências devido ao meio}
-
-Não foram identificadas interferências externas que restrinjam o funcionamento do protótipo.
-
-\subsection{Benefícios e Impactos}
-
-\subsubsection{Econômicos}
-
-A implementação do protótipo visa otimizar o uso de recursos de armazenamento e transmissão de dados, potencialmente resultando em economia de recursos de hardware e largura de banda.
-
-\subsubsection{Operacionais}
-
-O protótipo foi desenvolvido para facilitar a compressão e descompressão de dados, não impactando significativamente a rotina operacional do ambiente.
-
-\subsubsection{Estratégicos}
-
-A utilização do protótipo está alinhada com estratégias de otimização de recursos em dispositivos com capacidades limitadas.
-
-\subsubsection{Políticos}
-
-Não há impactos políticos previstos com a implementação do protótipo.
-
-\subsubsection{Sociais}
-
-A aplicação pode contribuir positivamente ao permitir o uso eficiente de recursos em dispositivos IoT, beneficiando a comunidade de desenvolvimento de IoT e usuários finais.
+Ao final do processo, foi gratificante ter uma ferramenta capaz de comprimir e descomprimir dados com eficiência, utilizando uma gama de algoritmos reconhecidos e testados.

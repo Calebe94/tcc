@@ -5,47 +5,53 @@ Neste capítulo, descrevemos os testes de validação realizados para a ferramen
 
 \section{Testes no Processador ARMv6}
 
-Os testes realizados no processador ARMv6 apresentaram os seguintes resultados:
+Os testes realizados no processador ARMv6 apresentaram os seguintes resultados, conforme mostrado na Tabela \ref{tab:exemplo}.
 
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
-\hline
-Algoritmo & Operação & Tempo (s) & Tamanho do arquivo (kB) \\
-\hline
-Huffman & Compressão & 0.669 & 176 \\
-Huffman & Descompressão & 0.098 & 688 \\
-Deflate & Compressão & 0.699 & 176 \\
-Deflate & Descompressão & 0.085 & 688 \\
-RLE & Compressão & 0.806 & 1232 \\
-RLE & Descompressão & 0.086 & 680 \\
-LZW & Compressão & 40.834 & 228 \\
-LZW & Descompressão & 0.146 & 688 \\
-\hline
-\end{tabular}
-\end{center}
+\begin{table}[htbp]
+  \centering
+  \caption{Resultados obtidos no processador ARMv6}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+  Algoritmo & Operação & Tempo (s) & Tamanho do arquivo (kB) \\
+  \hline
+  Huffman & Compressão & 0.669 & 176 \\
+  Huffman & Descompressão & 0.098 & 688 \\
+  Deflate & Compressão & 0.699 & 176 \\
+  Deflate & Descompressão & 0.085 & 688 \\
+  RLE & Compressão & 0.806 & 1232 \\
+  RLE & Descompressão & 0.086 & 680 \\
+  LZW & Compressão & 40.834 & 228 \\
+  LZW & Descompressão & 0.146 & 688 \\
+  \hline
+  \end{tabular}
+  \label{tab:exemplo}
+\end{table}
 
 Os resultados obtidos no processador ARMv6 indicam tempos de processamento mais prolongados em comparação com o ambiente x86, especialmente para o algoritmo LZW.
 
 \section{Testes no Processador x86}
 
-Já os testes no processador x86, com um ambiente mais robusto em termos de hardware, apresentaram os seguintes resultados:
+Já os testes no processador x86, com um ambiente mais robusto em termos de hardware, apresentaram os seguintes resultados, conforme mostrado na Tabela \ref{tab:x86}.
 
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
-\hline
-Algoritmo & Operação & Tempo (s) & Tamanho do arquivo (kB) \\
-\hline
-Huffman & Compressão & 0.161 & 176 \\
-Huffman & Descompressão & 0.008 & 688 \\
-Deflate & Compressão & 0.161 & 176 \\
-Deflate & Descompressão & 0.008 & 688 \\
-RLE & Compressão & 0.024 & 1232 \\
-RLE & Descompressão & 0.005 & 680 \\
-LZW & Compressão & 3.515 & 228 \\
-LZW & Descompressão & 0.011 & 688 \\
-\hline
-\end{tabular}
-\end{center}
+\begin{table}[htbp]
+  \centering
+  \caption{Resultados obtidos no processador x86}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+  Algoritmo & Operação & Tempo (s) & Tamanho do arquivo (kB) \\
+  \hline
+  Huffman & Compressão & 0.161 & 176 \\
+  Huffman & Descompressão & 0.008 & 688 \\
+  Deflate & Compressão & 0.161 & 176 \\
+  Deflate & Descompressão & 0.008 & 688 \\
+  RLE & Compressão & 0.024 & 1232 \\
+  RLE & Descompressão & 0.005 & 680 \\
+  LZW & Compressão & 3.515 & 228 \\
+  LZW & Descompressão & 0.011 & 688 \\
+  \hline
+  \end{tabular}
+  \label{tab:x86}
+\end{table}
 
 No ambiente x86, os tempos de processamento foram significativamente menores em comparação com o ARMv6, indicando uma melhoria considerável de desempenho, especialmente para o algoritmo LZW.
 
