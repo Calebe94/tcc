@@ -1,0 +1,11 @@
+#+title: Conclusões
+
+Os resultados obtidos nesta pesquisa proporcionaram insights valiosos sobre o desempenho e a eficiência de diferentes algoritmos de compressão (Huffman, Deflate, RLE e LZW) em dispositivos IoT com recursos limitados, considerando duas arquiteturas de processadores distintas (ARMv6 e x86).
+
+A disparidade significativa nos tempos de processamento evidenciada entre os processadores sublinha a influência crucial da arquitetura do processador no desempenho dos algoritmos de compressão. Notavelmente, os algoritmos Huffman e Deflate demonstraram eficiência superior em ambas as arquiteturas, destacando-se pela sua velocidade de processamento.
+
+No entanto, é importante ressaltar que o desempenho dos algoritmos pode variar significativamente de acordo com a arquitetura do processador, o que demanda uma escolha criteriosa do algoritmo de compressão em ambientes com recursos limitados, como dispositivos IoT.
+
+Embora este estudo tenha contribuído significativamente para compreender a eficácia dos algoritmos de compressão em dispositivos IoT, existem oportunidades para pesquisas futuras. Estas poderiam incluir o desenvolvimento de técnicas de otimização específicas para dispositivos IoT, visando melhorar o desempenho e a eficiência dos algoritmos de compressão em ambientes com restrições de recursos.
+
+Por fim, esta pesquisa destaca a importância de considerar não apenas a taxa de compressão, mas também o tempo de processamento ao selecionar e implementar técnicas de compressão de dados em dispositivos IoT, fornecendo orientações valiosas para aplicações práticas e contribuindo para o avanço contínuo nesse campo em constante evolução.

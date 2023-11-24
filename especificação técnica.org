@@ -1,0 +1,36 @@
+#+title: Especificação Técnica
+
+A Especificação Técnica de um projeto descreve detalhes específicos e técnicos do seu funcionamento, incluindo os requisitos de hardware, software e outros aspectos importantes. Para o seu projeto de técnicas de compressão de dados em dispositivos IoT com recursos limitados, aqui está uma possível especificação técnica:
+Especificação Técnica:
+
+    Hardware Utilizado:
+        Processador x86 da AMD e Processador ARMv6 da Broadcom.
+        Memória RAM e capacidade de armazenamento específicas dos dispositivos.
+
+    Software Desenvolvido:
+        Aplicação de linha de comando desenvolvida em uma linguagem de programação específica (ex: Python, C++, Java).
+        Módulos ou bibliotecas utilizadas para implementar os algoritmos de compressão (Huffman Coding, LZW, RLE e Deflate).
+        Sistema operacional e suas versões compatíveis.
+
+    Funcionamento da Aplicação:
+        Recebe um arquivo de dados no formato .csv por meio de argumentos de linha de comando.
+        Permite a seleção da ação de compressão ou descompressão.
+        Oferece a opção de escolher qual algoritmo de compressão utilizar (Huffman, LZW, RLE, Deflate).
+        Realiza a operação selecionada e gera um arquivo de saída correspondente.
+
+    Dados de Teste:
+        Dados climáticos do ano de 2022 da cidade de Curitiba-PR obtidos do Instituto Nacional de Meteorologia (INMET) no formato .csv.
+        Tamanho inicial dos arquivos de dados e detalhes sobre as características desses dados (estrutura, conteúdo).
+
+    Resultados Obtidos:
+        Tempo de processamento (compressão e descompressão) para cada algoritmo em ambas as arquiteturas (x86 e ARMv6).
+        Tamanho dos arquivos resultantes após compressão para cada algoritmo.
+
+    Ambiente de Teste:
+        Detalhes sobre o ambiente de testes utilizado para a execução da aplicação nos dois processadores (x86 e ARMv6).
+        Informações sobre o sistema operacional, versões de software, capacidade de armazenamento e memória disponível nos dispositivos.
+
+    Métricas de Desempenho:
+        Métricas utilizadas para avaliar o desempenho dos algoritmos (taxa de compressão, tempo de execução, eficiência).
+
+Essa especificação técnica fornece uma visão geral dos elementos essenciais do seu projeto, desde o hardware e software utilizados até os detalhes sobre os dados de teste e os resultados obtidos durante a execução da aplicação nos dispositivos específicos. Certifique-se de incluir todos os aspectos relevantes para um entendimento abrangente do seu projeto de compressão de dados em dispositivos IoT com recursos limitados.
