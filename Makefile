@@ -7,7 +7,7 @@
 textidote = "textidote.jar"
 
 presentation:
-	tmdp apresentação.md
+	tmdpress apresentação.md
 	weasyprint apresentação.html apresentação.pdf
 
 pdf: presentation
