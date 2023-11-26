@@ -4,12 +4,6 @@ author: Edimar Calebe Castanho
 time: 14:39
 -->
 
- <style>
-body {
-background-image: url('data-compression.jpg');
-background-repeat: no-repeat;
-}
-</style>
 <body>
 <br>
 <center>
