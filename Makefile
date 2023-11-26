@@ -6,7 +6,11 @@
 
 textidote = "textidote.jar"
 
-pdf:
+presentation:
+	tmdp apresentação.md
+	weasyprint apresentação.html apresentação.pdf
+
+pdf: presentation
 	pdflatex main.tex
 	bibtex main
 	pdflatex main.tex
@@ -17,7 +21,7 @@ spellcheck:
 	@-java -jar ${textidote} --check pt --output html main.tex > report.html
 
 clean:
-	rm -f *.aux *.idx *.lof *.pdf *.html *.log *.lot *.toc *.nlo *.los *.loq
+	rm -f *.aux *.idx *.lof *.pdf *.html *.log *.lot *.toc *.nlo *.los *.loq *.html
 
 default: all
 # end

@@ -26,6 +26,16 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y texlive texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-lang-portuguese texlive-publishers texlive-bibtex-extra
 
+      - name: Clone tmdpres repository and install
+        run: |
+          git clone https://github.com/tinyToolSH/tmdpres
+          cd tmdpres
+          sudo make install
+
+      - name: Install weasyprint
+        run: |
+          pip install weasyprint
+
       - name: Build PDFs
         run: make all
 
@@ -48,5 +58,7 @@ jobs:
         with:
           files: |
             main.pdf
+            apresentação.html
+            apresentação.pdf
           token: ${{ secrets.GITHUB_TOKEN }}
           release_id: ${{ steps.create_release.outputs.id }}
